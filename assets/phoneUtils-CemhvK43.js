@@ -1,0 +1,1 @@
+function t(e){if(!e)return null;const n=e.replace(/\D/g,"");return n.length===10?`+1${n}`:n.length===11&&n.startsWith("1")?`+${n}`:n.length>=10&&n.length<=15?`+${n}`:null}function r(e){return e?t(e)?null:`Invalid phone number: "${e}". Expected a 10-digit US number or international format.`:"No phone number provided"}export{t as toE164,r as validatePhoneForCall};
