@@ -7,7 +7,7 @@
     <title>LeadCRM.fund</title>
     <meta name="description" content="LeadCRM Login Portal">
     <meta name="author" content="Centurion Financial" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://storage.googleapis.com https://lovable.dev; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-ancestors 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://storage.googleapis.com https://lovable.dev; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.twilio.com wss://*.twilio.com https://eventgw.twilio.com; frame-ancestors 'none';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -25,13 +25,26 @@
   <meta property="og:description" content="LeadCRM Login Portal">
   <meta name="twitter:description" content="LeadCRM Login Portal">
   <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/hURMq5LJlJUszceAgxiajRLFlP03/uploads/1769649617957-Ashton.jpg">
-  <script type="module" crossorigin src="/centurion-test-lead/assets/index-cy0XAZlc.js"></script>
-  <link rel="modulepreload" crossorigin href="/centurion-test-lead/assets/v-core-Cm32MmjL.js">
-  <link rel="modulepreload" crossorigin href="/centurion-test-lead/assets/v-ui-ClsQ6mll.js">
-  <link rel="stylesheet" crossorigin href="/centurion-test-lead/assets/index-Cpjn-GU8.css">
+  <script type="module" crossorigin src="/centurion-test-lead/assets/index-D90hZNY4.js"></script>
+  <link rel="modulepreload" crossorigin href="/centurion-test-lead/assets/v-ui-B9xLTUpu.js">
+  <link rel="modulepreload" crossorigin href="/centurion-test-lead/assets/v-core-B-WLY6q8.js">
+  <link rel="stylesheet" crossorigin href="/centurion-test-lead/assets/index-DOuLryEv.css">
 </head>
 
   <body>
-    <div id="root"></div>
+    <script>
+      // GitHub Pages SPA redirect handler
+      (function() {
+        var params = new URLSearchParams(window.location.search);
+        var redirect = params.get('__spa_redirect');
+        if (redirect) {
+          params.delete('__spa_redirect');
+          var remaining = params.toString();
+          var newUrl = redirect + (remaining ? '&' + remaining : '');
+          window.history.replaceState(null, '', newUrl);
+        }
+      })();
+    </script>
+    <div id="root"></div>
   </body>
 </html>
